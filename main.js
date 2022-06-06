@@ -13,6 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
   form.style.position = "absolute";
   field.style.position = "sticky";
 
+
   function drinkCard({ drinks }) {
     for (const item of drinks) {
       //console.log(item)
@@ -103,7 +104,7 @@ document.addEventListener("DOMContentLoaded", () => {
             contents.textContent = data.drinks[0][`strIngredient${i}`];
 
             label.append(contents);
-            boxContent.append(label);
+            boxContent.append(label);  //  defined in another function - talk about putting it in global scope
             //return page
           }
         }
